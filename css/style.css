@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ol,ul,p,span{
+    margin:0;
+    padding:0;
+}
+:root{
+    --primaryfont:'Poppins', sans-serif;
+    --secondaryfont: 'PT Sans', sans-serif;
+}
+/* nav start */
+ul li {
+ text-transform: uppercase;
+ font-family:var(--primaryfont);
+ font-weight: 500;
+ font-size:15px ;
+ color:#353535;
+ padding:18px 22px 5px;
+ position: relative;
+
+}
+.navbar-toggler{
+    border:0;
+    box-shadow: none !important;}
+@media(min-width:320px)and (max-width:767px){
+    .navbar-toggler{
+        border:0;
+        box-shadow: none !important;}
+        
+    }
+
+    #navbarSupportedContent ul li::after{
+        content:'';
+        width:0%;
+        height:1px;
+        background-color: #353535;
+        position: absolute;
+        opacity:0;
+        visibility: hidden;
+        bottom:0;
+        left:0;
+        transition:0.30s;
+
+    }
+    #navbarSupportedContent ul li:hover::after{
+        width:100%;
+        opacity:1;
+        visibility: visible;
+    }
+/* nav ends */
